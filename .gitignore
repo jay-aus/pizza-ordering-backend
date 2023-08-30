@@ -1,0 +1,28 @@
+# Dependency directories
+node_modules/
+dist/
+build/
+*.log
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+*.bak
+
+# Compiled files
+*.js
+*.js.map
+*.d.ts
+
+# User-specific files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
