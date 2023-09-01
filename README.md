@@ -41,15 +41,18 @@ curl -X POST -H "Content-Type: application/json" -d '{
 The project follows a modular structure for better organization:
 
 src/
-menuData.ts: Contains the menu data for different pizzas and pizzerias.
-orderProcessor.ts: Handles the order processing logic, validation, and price calculation.
+constants/
+  location.ts
+  menuData.ts
 pizzaPriceCalculator/
-PizzaPriceCalculatorFactory.ts: Factory class to create pizza price calculator instances.
-PrestonPizzaPriceCalculator.ts: Calculates prices for pizzas in Preston.
-SouthbankPizzaPriceCalculator.ts: Calculates prices for pizzas in Southbank.
-PizzaPriceCalculator.ts: Interface for pizza price calculation.
-inputValidator.ts: Validates the input data for orders.
+  PizzaPriceCalculatorFactory.ts: Factory class to create pizza price calculator instances.
+  PrestonPizzaPriceCalculator.ts: Calculates prices for pizzas in Preston.
+  SouthbankPizzaPriceCalculator.ts: Calculates prices for pizzas in Southbank.
+  PizzaPriceCalculator.ts: Interface for pizza price calculation.
+validator/
+  inputValidator.ts: Validates the input data for orders.
 index.ts: Main entry point for the Express server and routing.
+orderProcessor.ts
 
 # TO DO
 Implement logic for pizza toppings; Add test cases

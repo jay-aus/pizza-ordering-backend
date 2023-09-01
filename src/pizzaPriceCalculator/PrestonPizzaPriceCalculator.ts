@@ -1,7 +1,7 @@
 // src/strategies/PrestonPizzaPriceCalculator.ts
 
 import { PizzaPriceCalculator } from './PizzaPriceCalculator';
-import { Pizza } from '../menuData';
+import { Pizza } from '../constants/menuData';
 
 export class PrestonPizzaPriceCalculator implements PizzaPriceCalculator {
   calculatePrice(pizzas: Pizza[], orders: { pizza: string; quantity: number }[]): number {
@@ -14,10 +14,10 @@ export class PrestonPizzaPriceCalculator implements PizzaPriceCalculator {
         totalPrice += pizza.price * order.quantity;
         console.log(totalPrice);
         // TO DO - add proper logic to fix the toppings calculation - replicate the same for Southbank
-        if (pizza.toppings.includes('Cheese') || pizza.toppings.includes('Capsicum') || pizza.toppings.includes('Salami') || pizza.toppings.includes('Olives')) {
+        /*if (pizza.toppings.includes('Cheese') || pizza.toppings.includes('Capsicum') || pizza.toppings.includes('Salami') || pizza.toppings.includes('Olives')) {
             console.log('Toppings: ', pizza.toppings);
           totalPrice += order.quantity; // Additional toppings charge
-        }
+        } */
       }
     }
 

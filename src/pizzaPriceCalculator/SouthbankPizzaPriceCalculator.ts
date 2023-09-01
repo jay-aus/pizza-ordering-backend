@@ -1,7 +1,7 @@
 // src/strategies/SouthbankPizzaPriceCalculator.ts
 
 import { PizzaPriceCalculator } from './PizzaPriceCalculator';
-import { Pizza } from '../menuData';
+import { Pizza } from '../constants/menuData';
 
 export class SouthbankPizzaPriceCalculator implements PizzaPriceCalculator {
   calculatePrice(pizzas: Pizza[], orders: { pizza: string; quantity: number }[]): number {
